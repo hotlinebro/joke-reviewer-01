@@ -6,7 +6,7 @@ only, no network.
 
 from pathlib import Path
 
-JOKE = "My AI agent fixed the bug by deleting the feature, then wrote a test proving the feature was never needed."
+JOKE = "My agent fixed the bug behind a feature flag that defaults to the bug."
 # Hard-coded on purpose: the brief asks for one fixed joke, the same every run.
 
 
