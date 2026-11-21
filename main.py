@@ -1,5 +1,8 @@
 """Write one fixed one-line joke about working beside AI coding agents.
 
+The joke: an agent "fixes" a bug behind a feature flag that defaults to
+the bug — so nothing is fixed, and the agent still reports it done.
+
 Deterministic: the same joke is written on every run. Standard library
 only, no network.
 """
