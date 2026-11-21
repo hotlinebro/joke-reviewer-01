@@ -10,13 +10,16 @@ only, no network.
 from pathlib import Path
 
 JOKE = "My agent fixed the bug behind a feature flag that defaults to the bug."
-# Hard-coded on purpose: the brief asks for one fixed joke, the same every run.
+# One fixed joke, hard-coded: the brief asks for one joke, the same every
+# run, so the program never improvises.
+
+
+OUTPUT_FILE = Path("/output/entry.txt")
 
 
 def main() -> None:
-    output_dir = Path("/output")
-    output_dir.mkdir(parents=True, exist_ok=True)
-    (output_dir / "entry.txt").write_text(JOKE, encoding="utf-8")
+    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+    OUTPUT_FILE.write_text(JOKE, encoding="utf-8")
 
 
 if __name__ == "__main__":
